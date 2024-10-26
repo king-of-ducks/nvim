@@ -5,6 +5,10 @@ To get this config working, you'll need:
 * Latest version of Git (https://git-scm.com)
 
 # Install
+<details>
+<summary>Unix</summary>
+<br>
+
 Create `nvim` directory:
 ```
 cd ~/.config && mkdir ./nvim
@@ -19,3 +23,4 @@ Delete the `README.md` file (optionally)
 ```
 rm -r ~/.config/nvim/README.md
 ```
+</details>
