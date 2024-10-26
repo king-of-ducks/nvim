@@ -24,3 +24,22 @@ Delete the `README.md` file (optionally)
 rm -r ~/.config/nvim/README.md
 ```
 </details>
+
+<details>
+<summary>Windows (PowerShell)</summary>
+<br>
+
+Move to Local AppData:
+```
+cd %localappdata%
+```
+Create `nvim` folder:
+```
+md nvim
+```
+
+Clone this repository to necessary directory:
+```
+git clone https://github.com/king-of-ducks/nvim.git %localappdata%/nvim
+```
+</details>
