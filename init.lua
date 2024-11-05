@@ -69,6 +69,7 @@ vim.g.mapleader = " "
 vim.g.maplocalleader = "\\"
 
 -- Mappings
+vim.keymap.set('n', ';', ':')
 vim.keymap.set('n', '<C-q>', ':q!<CR>')
 vim.keymap.set('n', '<C-s>', ':w!<CR>')
 vim.keymap.set('n', '<C-n>', ':NvimTreeToggle<CR>', { silent = true })
