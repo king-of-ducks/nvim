@@ -79,49 +79,15 @@ vim.keymap.set('n', '<C-t>', ':ToggleTerm<CR>', { silent = true })
 require('toggleterm').setup()
 require('mason').setup()
 require('base46').load_all_highlights()
-require('nvim-tree').setup()
 require('chadrc')
 
-local mode_map = {
-    ['n']    = ' NORMAL',
-    ['no']   = ' O-PENDING',
-    ['nov']  = ' O-PENDING',
-    ['noV']  = ' O-PENDING',
-    ['no�']  = ' O-PENDING',
-    ['niI']  = ' NORMAL',
-    ['niR']  = ' NORMAL',
-    ['niV']  = ' NORMAL',
-    ['nt']   = ' NORMAL',
-    ['v']    = ' VISUAL',
-    ['vs']   = ' VISUAL',
-    ['V']    = ' VISUAL-LINE',
-    ['Vs']   = ' VISUAL-LINE',
-    ['�']    = ' VISUAL-BLOCK',
-    ['�s']   = ' VISUAL-BLOCK',
-    ['s']    = ' SELECT',
-    ['S']    = ' SELECT-LINE',
-    ['�']    = ' SELECT-BLOCK',
-    ['i']    = ' INSERT',
-    ['ic']   = ' INSERT',
-    ['ix']   = ' INSERT',
-    ['R']    = ' REPLACE',
-    ['Rc']   = ' REPLACE',
-    ['Rx']   = ' REPLACE',
-    ['Rv']   = ' V-REPLACE',
-    ['Rvc']  = ' V-REPLACE',
-    ['Rvx']  = ' V-REPLACE',
-    ['c']    = ' COMMAND',
-    ['cv']   = ' EX',
-    ['ce']   = ' EX',
-    ['r']    = ' REPLACE',
-    ['rm']   = ' MORE',
-    ['r?']   = ' CONFIRM',
-    ['!']    = ' SHELL',
-    ['t']    = ' TERMINAL',
-}
+require('nvim-tree').setup({
+    filters = {
+        dotfiles = true
+    }
+})
 
 local cmp = require('cmp')
-
 cmp.setup({
     snippet = {
         expand = function(args)
@@ -144,14 +110,12 @@ cmp.setup({
         { name = 'buffer' },
     })
 })
-
 cmp.setup.cmdline({ '/', '?' }, {
     mapping = cmp.mapping.preset.cmdline(),
     sources = {
         { name = 'buffer' }
     }
 })
-
 cmp.setup.cmdline(':', {
     mapping = cmp.mapping.preset.cmdline(),
     sources = cmp.config.sources({
@@ -161,6 +125,5 @@ cmp.setup.cmdline(':', {
     }),
     matching = { disallow_symbol_nonprefix_matching = false }
 })
-
 local capabilities = require('cmp_nvim_lsp').default_capabilities()
 require('lspconfig')['clangd'].setup { capabilities = capabilities }
