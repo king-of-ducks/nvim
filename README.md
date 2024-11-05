@@ -26,3 +26,25 @@ rm README.md
 
 `Not made yet, sorry :(`
 </details>
+
+# Usage
+## Installing Plugins
+Open Neovim to install all the plugins
+```
+nvim
+```
+(If Lazy.nvim hasn't opened automatically, do this command)
+```
+:Lazy install
+```
+
+## Managing CMP.nvim
+CMP is a plugin that adds autocomplete. In this config, by default, language server set to `clangd`. It's located at last line in `init.lua`. It looks like this:
+```
+require('lspconfig')['clangd'].setup { capabilities = capabilities}
+```
+
+If you want to set your language server, change `clangd` to another language server. You can install servers using `NPM`, like this:
+```
+npm install -g <YOUR_LS_NAME>
+```
