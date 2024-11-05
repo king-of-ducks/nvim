@@ -73,8 +73,6 @@ vim.keymap.set('n', '<C-q>', ':q!<CR>')
 vim.keymap.set('n', '<C-s>', ':w!<CR>')
 vim.keymap.set('n', '<C-n>', ':NvimTreeToggle<CR>', { silent = true })
 vim.keymap.set('n', '<C-t>', ':ToggleTerm<CR>', { silent = true })
-vim.keymap.set('n', '<M-i>', ':BufferLineCyclePrev<CR>', { silent = true })
-vim.keymap.set('n', '<M-o>', ':BufferLineCycleNext<CR>', { silent = true })
 
 -- Initializing plugins
 require('toggleterm').setup()
