@@ -13,13 +13,9 @@ M = {
             modules = nil
         },
         cmp = {
-            enable = true,
-            lazyload = false,
             lspkind_text = true,
-            style = "default", 
-            format_colors = {
-                tailwind = false,
-            },
+            style = "atom_colored", --default/flat_light/flat_dark/atom/atom_colored
+            format_colors = { tailwind = false }
         }
     }
 }
