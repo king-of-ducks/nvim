@@ -18,7 +18,6 @@ vim.opt.rtp:prepend(lazypath)
 
 require("lazy").setup({
     spec = {	
-        { 'nvim-lualine/lualine.nvim' },
         { 'ryanoasis/vim-devicons' },
         { 'nvim-tree/nvim-web-devicons' },
         { 'neovim/nvim-lspconfig' },
@@ -32,7 +31,6 @@ require("lazy").setup({
         { 'nvim-telescope/telescope.nvim' },
         { 'nvim-lua/plenary.nvim' },
         { 'MunifTanjim/nui.nvim' },
-        { 'williamboman/mason.nvim' },
         {
             "nvchad/ui",
             config = function()
@@ -79,7 +77,6 @@ vim.keymap.set('n', '<C-l>', ':Lazy<CR>', { silent = true })
 
 -- Initializing plugins
 require('toggleterm').setup()
-require('mason').setup()
 require('base46').load_all_highlights()
 require('chadrc')
 
