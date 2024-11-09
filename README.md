@@ -24,5 +24,5 @@ rm README.md
 <summary>Windows (PowerShell)</summary>
 <br>
 
-`Not made yet, sorry :(`
+`Haven't made yet, sorry :(`
 </details>
