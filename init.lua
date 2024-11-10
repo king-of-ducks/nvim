@@ -75,6 +75,7 @@ vim.keymap.set('n', '<C-n>', ':NvimTreeToggle<CR>', { silent = true })
 vim.keymap.set('n', '<C-t>', ':ToggleTerm<CR>', { silent = true })
 vim.keymap.set('n', '<C-f>', ':Telescope<CR>', { silent = true })
 vim.keymap.set('n', '<C-l>', ':Lazy<CR>', { silent = true })
+vim.keymap.set('n', '<M-o>', ':lua require("nvchad.tabufline").next()<CR>', { silent = true })
 
 -- Initializing plugins
 require('toggleterm').setup()

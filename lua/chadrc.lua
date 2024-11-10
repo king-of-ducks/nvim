@@ -17,6 +17,12 @@ M = {
             style = "atom_colored",
             format_colors = { tailwind = false }
         }
+    },
+    colorify = {
+        enabled = true,
+        mode = "bg", -- fg, bg, virtual
+        virt_text = "󱓻 ",
+        highlight = { hex = true, lspvars = true },
     }
 }
 
