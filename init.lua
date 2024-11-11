@@ -55,6 +55,7 @@ end
 
 -- Basic settings
 vim.opt.showmode = false
+vim.opt.fillchars:append("eob: ")
 vim.opt.number = true
 vim.opt.autoindent = true
 vim.opt.shiftwidth = 4
@@ -68,7 +69,6 @@ vim.g.maplocalleader = "\\"
 
 -- Mappings
 vim.keymap.set('n', ';', ':')
-vim.keymap.set('n', '.', ':!')
 vim.keymap.set('n', '<C-q>', ':q!<CR>')
 vim.keymap.set('n', '<C-s>', ':w!<CR>')
 vim.keymap.set('n', '<C-n>', ':NvimTreeToggle<CR>', { silent = true })
