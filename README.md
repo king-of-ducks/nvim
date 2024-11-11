@@ -2,6 +2,8 @@
 * Neovim 0.9+ (https://neovim.io)
 * Nerd Fonts (https://nerdfonts.com)
 * Git (https://git-scm.com)
+## Optional packages
+* NPM (https://nodejs.org)
 
 # Installation
 <details>
@@ -13,10 +15,9 @@ Clone this repository using Git:
 git clone https://github.com/king-of-ducks/nvim.git ~/.config/nvim
 ```
 
-Remove `README.md` (optionally)
+Install `clangd` server (recommended)
 ```
-cd ~/.config/nvim
-rm README.md
+npm install -g clangd
 ```
 </details>
 
