@@ -16,21 +16,31 @@ if not (vim.uv or vim.loop).fs_stat(lazypath) then
 end
 vim.opt.rtp:prepend(lazypath)
 
+-- List of plugins
 require("lazy").setup({
-    spec = {	
+    spec = {
+        -- Icons
         { 'ryanoasis/vim-devicons' },
         { 'nvim-tree/nvim-web-devicons' },
+
+        -- LSP and autocomplete
         { 'neovim/nvim-lspconfig' },
-        { 'nvim-tree/nvim-tree.lua' },
         { 'hrsh7th/cmp-nvim-lsp' },
         { 'hrsh7th/cmp-buffer' },
         { 'hrsh7th/cmp-path' },
         { 'hrsh7th/cmp-cmdline' },
         { 'hrsh7th/nvim-cmp' },
+
+        -- Other plugins
         { 'akinsho/toggleterm.nvim' },
         { 'nvim-telescope/telescope.nvim' },
+        { 'nvim-tree/nvim-tree.lua' },
+
+        -- Libraries
         { 'nvim-lua/plenary.nvim' },
         { 'MunifTanjim/nui.nvim' },
+
+        -- UI and colors
         {
             "nvchad/ui",
             config = function()
@@ -49,6 +59,8 @@ require("lazy").setup({
     install = { colorscheme = { "nvchad" } },
     checker = { enabled = true },
 })
+
+-- Base46 Setup
 for _, v in ipairs(vim.fn.readdir(vim.g.base46_cache)) do
     dofile(vim.g.base46_cache .. v)
 end
@@ -75,7 +87,6 @@ vim.keymap.set('n', '<C-n>', ':NvimTreeToggle<CR>', { silent = true })
 vim.keymap.set('n', '<C-t>', ':ToggleTerm<CR>', { silent = true })
 vim.keymap.set('n', '<C-f>', ':Telescope<CR>', { silent = true })
 vim.keymap.set('n', '<C-l>', ':Lazy<CR>', { silent = true })
-vim.keymap.set('n', '<M-o>', ':lua require("nvchad.tabufline").next()<CR>', { silent = true })
 
 -- Initializing plugins
 require('toggleterm').setup()
