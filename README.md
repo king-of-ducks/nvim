@@ -14,10 +14,11 @@ Clone this repository using Git:
 git clone https://github.com/king-of-ducks/nvim.git ~/.config/nvim
 ```
 
-Install `clangd` server (recommended)
+Open Neovim and install LSP (recommended)
 ```
-npm install -g clangd
+:MasonInstallAll
 ```
+(That'll install `clangd` and `pyright`)
 </details>
 
 <details>
