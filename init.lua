@@ -25,6 +25,7 @@ require("lazy").setup({
 
         -- LSP and autocomplete
         { 'neovim/nvim-lspconfig' },
+        { 'williamboman/mason.nvim' },
         { 'hrsh7th/cmp-nvim-lsp' },
         { 'hrsh7th/cmp-buffer' },
         { 'hrsh7th/cmp-path' },
@@ -90,6 +91,7 @@ vim.keymap.set('n', '<C-l>', ':Lazy<CR>', { silent = true })
 
 -- Initializing plugins
 require('toggleterm').setup()
+require('mason').setup()
 require('base46').load_all_highlights()
 require('chadrc')
 
@@ -103,7 +105,7 @@ local cmp = require('cmp')
 local options = {
     snippet = {
         expand = function(args)
-            vim.fn["vsnip#anonymous"](args.body) 
+            vim.snippet.expand(args.body)
         end,
     },
     window = {
@@ -142,6 +144,5 @@ options = vim.tbl_deep_extend("force", options, require "nvchad.cmp")
 require("cmp").setup(options)
 
 local capabilities = require('cmp_nvim_lsp').default_capabilities()
-require('lspconfig')['clangd'].setup {
-    capabilities = capabilities
-}
+require('lspconfig').clangd.setup { capabilities = capabilities }
+require('lspconfig').pyright.setup { capabilities = capabilities }
