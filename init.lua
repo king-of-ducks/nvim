@@ -57,7 +57,7 @@ require("lazy").setup({
         },
         { 'nvchad/volt' }
     },
-    install = { colorscheme = { "nvchad" } },
+    install = { colorscheme = { "catppuccin" } },
     checker = { enabled = true },
 })
 
@@ -86,8 +86,9 @@ vim.keymap.set('n', '<C-q>', ':q!<CR>')
 vim.keymap.set('n', '<C-s>', ':w!<CR>')
 vim.keymap.set('n', '<C-n>', ':NvimTreeToggle<CR>', { silent = true })
 vim.keymap.set('n', '<C-t>', ':ToggleTerm<CR>', { silent = true })
-vim.keymap.set('n', '<C-f>', ':Telescope<CR>', { silent = true })
-vim.keymap.set('n', '<C-l>', ':Lazy<CR>', { silent = true })
+vim.keymap.set('n', '<Leader>f', ':Telescope<CR>', { silent = true })
+vim.keymap.set('n', '<Leader>l', ':Lazy<CR>', { silent = true })
+vim.keymap.set('n', '<Leader>t', ':lua require("nvchad.themes").open({ style = "bordered" })<CR>', { silent = true })
 vim.keymap.set('n', '<M-RIGHT>', ':bnext<CR>', { silent = true })
 vim.keymap.set('n', '<M-LEFT>', ':bprevious<CR>', { silent = true })
 

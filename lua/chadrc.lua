@@ -2,10 +2,11 @@ local M = {}
 
 M = {
     base46 = {
-        theme = "onedark",
+        theme = "catppuccin",
         transparency = false
     },
     ui = {
+        theme = "catppuccin",
         tabufline = {
             enable = true,
             lazyload = false,
