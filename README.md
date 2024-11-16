@@ -15,7 +15,15 @@ git clone https://github.com/king-of-ducks/nvim.git ~/.config/nvim
 <br>
 <br>
 
-Open Neovim and install LSP (recommended)
+Delete the `.git` folder:
+```bash
+cd ~/.config/nvim
+rm -rf .git
+```
+<br>
+<br>
+
+Open Neovim and install LSP (recommended):
 ```vim
 :MasonInstallAll
 ```

@@ -21,7 +21,7 @@ M = {
     },
     colorify = {
         enabled = true,
-        mode = "bg", -- fg, bg, virtual
+        mode = "bg", 
         virt_text = "󱓻 ",
         highlight = { hex = true, lspvars = true },
     }
