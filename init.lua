@@ -57,7 +57,7 @@ require("lazy").setup({
         },
         { 'nvchad/volt' }
     },
-    install = { colorscheme = { "catppuccin" } },
+    install = { colorscheme = { "default" } },
     checker = { enabled = true },
 })
 
