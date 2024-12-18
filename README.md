@@ -1,3 +1,6 @@
+# Hello
+This is my `nvim` config. Feel free to use it, copy and modify as you want
+
 # Requirements
 * Neovim 0.9+ (https://neovim.io)
 * Nerd Fonts (https://nerdfonts.com)
