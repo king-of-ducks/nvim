@@ -24,9 +24,9 @@ rm -rf .git
 ```
 <br>
 
-Open Neovim and install LSP (recommended):
+Install LSP (optional, but recommended):
 ```vim
-:MasonInstallAll
+nvim -c ":MasonInstallAll"
 ```
 (That'll install `clangd` and `pyright`)
 <br><br>
