@@ -6,9 +6,7 @@ This is my `nvim` config. Feel free to use it, copy and modify as you want
 * Nerd Fonts (https://nerdfonts.com)
 * Git (https://git-scm.com)
 
-# Installation
-<details>
-<summary>Unix</summary>
+# Installation (Unix)
 <br>
 
 Clone this repository using Git:
@@ -30,11 +28,11 @@ nvim -c ":MasonInstallAll"
 ```
 (That'll install `clangd` and `pyright`)
 <br><br>
-</details>
 
-<details>
-<summary>Windows (PowerShell)</summary>
+# Uninstallation
 <br>
 
-`Haven't made yet, sorry :(`
-</details>
+Just remove `nvim` folder:
+```bash
+rm -rf ~/.config/nvim
+```

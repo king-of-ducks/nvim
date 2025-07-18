@@ -176,7 +176,7 @@ require('dashboard').setup({
 				keymap = '::',
 				key_hl = 'Number',
 				key_format = ' %s',
-				action = ':new'
+				action = ':enew'
 			},
 			{
 				icon = ' ',
