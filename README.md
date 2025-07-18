@@ -7,7 +7,6 @@ This is my `nvim` config. Feel free to use it, copy and modify as you want
 * Git (https://git-scm.com)
 
 # Installation (Unix)
-<br>
 
 Clone this repository using Git:
 ```bash
@@ -30,7 +29,6 @@ nvim -c ":MasonInstallAll"
 <br><br>
 
 # Uninstallation
-<br>
 
 Just remove `nvim` folder:
 ```bash
