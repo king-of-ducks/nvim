@@ -1,5 +1,5 @@
 ## Discontinued
-This config is discontinued and i won't make any updates with this config. New config is in development
+This config is discontinued and i won't make any updates for this config. New one is in development
 
 # Hello
 This is my `nvim` config. Feel free to use it, copy and modify as you want
