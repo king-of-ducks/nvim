@@ -13,7 +13,7 @@ This is my `nvim` config. Feel free to use it, copy and modify as you want
 
 Clone this repository using Git:
 ```bash
-git clone https://github.com/king-of-ducks/nvim.git ~/.config/nvim
+git clone https://github.com/king-of-ducks/nvim-old.git ~/.config/nvim
 ```
 <br>
 
